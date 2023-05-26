@@ -5,25 +5,28 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexflix</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="logo" type="text">
-      <h1 style="font-size: 50px">Flexflix</h1>
-    </div>
+    <header class="logo">
+      <h1><a href="/index.html">Flexflix</a></h1>
     </header>
+    <h1>Latest Movies</h1>
+    <div id="movie-list"></div>
     <div class="container">
       <div class="search-container">
         <input
           type="text"
-          placeholder="type movie title here..."
+          placeholder="Type movie title here..."
           id="movie-name"
-          value="spider man"
+          value="Ang pogi ni sir Carlo"
         />
         <button id="search-btn">Search</button>
       </div>
-      <div id="result"></div>
+      <div class="result-container">
+        <div id="result"></div>
+      </div>
     </div>
-
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
